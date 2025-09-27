@@ -352,8 +352,6 @@ const ArticleCard = ({
           {publication && (
             <PublicationInfo>{publication}</PublicationInfo>
           )}
-          <span>·</span>
-          <span>{publishedDate}</span>
         </AuthorInfo>
         
         <ArticleTitle featured={featured}>

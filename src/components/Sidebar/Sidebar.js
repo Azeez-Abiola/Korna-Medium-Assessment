@@ -64,9 +64,12 @@ const StaffPickAuthorAvatar = styled.div`
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-image: url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=50&h=50&fit=crop&crop=face');
+  background-color: #e6e6e6; /* Fallback background */
+  background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face');
   background-size: cover;
   background-position: center;
+  flex-shrink: 0;
+  display: block; /* Ensure it displays as a block */
 `;
 
 const StaffPickTitle = styled.h4`
@@ -273,7 +276,7 @@ const Sidebar = () => {
       id: 3,
       author: "Lim Nguyen",
       title: "Golden Design Lessons from Tokyo Metro",
-      image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?w=100&h=100&fit=crop"
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=100&h=100&fit=crop"
     }
   ];
 
@@ -286,19 +289,19 @@ const Sidebar = () => {
       id: 1,
       name: "Dr. Derek Austin 🥳",
       description: "AI Creative Engineer | Machine Learning Full Stack | The AI Workforce Series",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b52d5ddd?w=100&h=100&fit=crop&crop=face"
     },
     {
       id: 2,
       name: "iTEXT",
       description: "iTEXT is a platform for IT developers and software developers",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
     },
     {
       id: 3,
       name: "Oliver Shaw",
       description: "Primarily publication in the Java programming.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
     }
   ];
 

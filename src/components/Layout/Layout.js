@@ -16,6 +16,7 @@ const ContentWrapper = styled.div`
   gap: 0 48px; /* Space between main content and sidebar */
   padding-top: 25px;
   position: relative;
+  overflow: visible; /* Allow vertical line to extend outside */
 
   @media (max-width: 1080px) {
     grid-template-columns: 1fr;
@@ -37,12 +38,11 @@ const MainContent = styled.main`
 
 const VerticalDivider = styled.div`
   width: 1px;
-  background-color: #e6e6e6; /* Match TopSection border color exactly */
+  background-color: #e6e6e6;
   position: absolute;
-  top: -73px; /* Connect to TopSection bottom border: -(57px TopSection + 48px Navigation - 32px adjustment) */
-  bottom: 0; /* Extend to the bottom */
-  right: 320px; /* Keep the same horizontal position */
-  height: auto; /* Let it fill from top to bottom automatically */
+  top: -82px; /* Extend upward: -(57px header + 25px padding) */
+  bottom: 0;
+  right: 320px;
   
   @media (max-width: 1080px) {
     display: none;
