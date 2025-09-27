@@ -203,7 +203,7 @@ const ProfileImage = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face');
+  background-image: url('/images/profile.jpg');
   background-size: cover;
   background-position: center;
   cursor: pointer;
